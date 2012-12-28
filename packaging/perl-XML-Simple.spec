@@ -8,7 +8,6 @@ Summary:        Easy API to read/write XML (Perl module)
 Url:            http://cpan.org/modules/by-module/XML/
 Group:          Development/Libraries/Perl
 Source:         http://www.cpan.org/authors/id/G/GR/GRANTM/XML-Simple-%{version}.tar.gz
-Patch0:         XML-Simple-%{version}-test.diff
 BuildRequires:  perl-XML-Parser
 BuildRequires:  perl-macros
 Requires:       perl-XML-Parser
@@ -20,7 +19,6 @@ XML::Simple - Easy API to read/write XML (esp config files)
 
 %prep
 %setup -q -n XML-Simple-%{version}
-%patch0
 
 %build
 perl Makefile.PL
