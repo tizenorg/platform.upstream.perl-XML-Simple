@@ -348,6 +348,11 @@ like($_, qr{^
     \s*<b\s+alpha="1"\s*/>
   ){2}
 \s*</opt>
+|
+<opt>
+  \s*<b\s+alpha="1"\s*/>
+  \s*<a\s+alpha="1"\s*/>
+\s*</opt>
 }xs, 'and encodes as expected');
 
 
