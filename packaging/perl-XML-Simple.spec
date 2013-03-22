@@ -1,5 +1,3 @@
-#
-
 Name:           perl-XML-Simple
 Version:        2.18
 Release:        0
@@ -11,8 +9,6 @@ Source:         http://www.cpan.org/authors/id/G/GR/GRANTM/XML-Simple-%{version}
 BuildRequires:  perl-XML-Parser
 BuildRequires:  perl-macros
 Requires:       perl-XML-Parser
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
-%{perl_requires}
 
 %description
 XML::Simple - Easy API to read/write XML (esp config files)
@@ -33,7 +29,6 @@ make test
 
 %files
 %defattr(-,root,root)
-%doc README
 %doc %{_mandir}/man?/*
 %{perl_vendorlib}/XML
 %{perl_vendorarch}/auto/XML
